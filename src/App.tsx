@@ -52,10 +52,12 @@ function App() {
   return (
     <>
     <div>
-      <h1 className='markdown-previewer-heading'>Markdown Previewer</h1>
+      <h1 className='markdown-previewer-heading' style={{color: "#499bea"}}>Markdown Previewer</h1>
       <div className="boxes-container">
-        <textarea name='editor' onChange={(event) => {setMarkdownText(event.target.value)}} id="editor" value={markdownText}></textarea>
-        <div className="previewer" id='preview'>
+        <textarea name='editor' onChange={(event) => {setMarkdownText(event.target.value)}} id="editor" 
+          value={markdownText} style={{color: "#499bea"}}>
+        </textarea>
+        <div className="previewer" id='preview' style={{color: "#499bea", textDecorationColor: "white"}}>
           <ReactMarkdown>{markdownText}</ReactMarkdown>
         </div>
       </div>
